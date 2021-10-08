@@ -311,6 +311,7 @@ namespace AnalaizerClass
         /// <returns></returns>
         public static string Estimate()
         {
+            //
             string result = "";
             bool flag = CheckCurrency();
 
