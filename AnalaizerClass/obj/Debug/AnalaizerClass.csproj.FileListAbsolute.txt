@@ -9,3 +9,14 @@ D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClas
 D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\bin\Debug\CalcClass.pdb
 D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\bin\Debug\CalcExeptionClass.pdb
 D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.CopyComplete
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\bin\Debug\AnalaizerClass.dll
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\bin\Debug\AnalaizerClass.pdb
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\bin\Debug\CalcClass.dll
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\bin\Debug\CalcExeptionClass.dll
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\bin\Debug\CalcClass.pdb
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\bin\Debug\CalcExeptionClass.pdb
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\obj\Debug\AnalaizerClass.csprojAssemblyReference.cache
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.CoreCompileInputs.cache
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.CopyComplete
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\obj\Debug\AnalaizerClass.dll
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\obj\Debug\AnalaizerClass.pdb
