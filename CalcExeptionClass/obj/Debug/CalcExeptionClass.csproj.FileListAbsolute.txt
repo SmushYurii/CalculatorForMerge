@@ -3,3 +3,9 @@ D:\Анна\ITStep Программирование\TeamCalculator\CalcExeptionC
 D:\Анна\ITStep Программирование\TeamCalculator\CalcExeptionClass\obj\Debug\CalcExeptionClass.csproj.CoreCompileInputs.cache
 D:\Анна\ITStep Программирование\TeamCalculator\CalcExeptionClass\obj\Debug\CalcExeptionClass.dll
 D:\Анна\ITStep Программирование\TeamCalculator\CalcExeptionClass\obj\Debug\CalcExeptionClass.pdb
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\bin\Debug\CalcExeptionClass.dll
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\bin\Debug\CalcExeptionClass.pdb
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\obj\Debug\CalcExeptionClass.csprojAssemblyReference.cache
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\obj\Debug\CalcExeptionClass.csproj.CoreCompileInputs.cache
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\obj\Debug\CalcExeptionClass.dll
+D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\obj\Debug\CalcExeptionClass.pdb
