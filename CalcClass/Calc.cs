@@ -8,8 +8,8 @@ namespace CalcClass
 {
     public class Calc
     {
-        //  private static string _lastError = "";               // не використовувати чекати пояснення
-        //  public static string lastError { get; set; }         // не використовувати чекати пояснення
+        //private static string _lastError = "";// не використовувати чекати пояснення
+        //public static string lastError { get; set; }// не використовувати чекати пояснення
 
         /// <summary>
         /// Функція складання числа а і b
@@ -17,9 +17,16 @@ namespace CalcClass
         /// <param name="a">доданок</param>
         /// <param name="b">доданок</param>
         /// <returns>сума</returns>
-        public static int Add(long а, long b)
+        public static int Add(long a, long b)
         {
-            throw new NotImplementedException();
+            long res = a + b;
+
+            if (res < int.MinValue || res > int.MaxValue)
+            {
+                throw new OverflowException();
+            }
+            return (int)res;
+
         }
 
         /// <summary>
@@ -28,9 +35,15 @@ namespace CalcClass
         /// <param name="a">зменшуване</param>
         /// <param name="b">від’ємне</param>
         /// <returns>різниця</returns>
-        public static int Sub(long а, long b)
+        public static int Sub(long a, long b)
         {
-            throw new NotImplementedException();
+            long res = a - b;
+
+            if (res < int.MinValue || res > int.MaxValue)
+            {
+                throw new OverflowException();
+            }
+            return (int)res;
         }
         /// <summary>
         /// функція множення чисел а і b
@@ -38,9 +51,15 @@ namespace CalcClass
         /// <param name="a">множник</param>
         /// <param name="b">множник</param>
         /// <returns>добуток</returns>
-        public static int Mult(long а, long b)
+        public static int Mult(long a, long b)
         {
-            throw new NotImplementedException();
+            long res = a * b;
+
+            if (res < int.MinValue || res > int.MaxValue)
+            {
+                throw new OverflowException();
+            }
+            return (int)res;
         }
         /// <summary>
         /// функція знаходження частки
@@ -48,9 +67,20 @@ namespace CalcClass
         /// <param name="a">ділене</param>
         /// <param name="b">дільник</param>
         /// <returns>частка</returns>
-        public static int Div(long а, long b)
+        public static int Div(long a, long b)
         {
-            throw new NotImplementedException();
+            if (b == 0)
+            {
+                throw new DivideByZeroException();
+            }
+
+            long res = a / b;
+
+            if (res < int.MinValue || res > int.MaxValue)
+            {
+                throw new OverflowException();
+            }
+            return (int)res;
         }
 
         /// <summary>
@@ -59,27 +89,48 @@ namespace CalcClass
         /// <param name="a">ділене</param>
         /// <param name="b">дільник</param>
         /// <returns>остача</returns>
-        public static int Mod(long а, long b)
+        public static int Mod(long a, long b)
         {
-            throw new NotImplementedException();
+            if (b == 0)
+            {
+                throw new DivideByZeroException();
+            }
+
+            long res = a % b;
+
+            if (res < int.MinValue || res > int.MaxValue)
+            {
+                throw new OverflowException();
+            }
+            return (int)res;
         }
         /// <summary>
         /// унарний плюс 
         /// </summary>
         /// <param name="a"></param>
         /// <returns></returns>
-        public static int ABS(long а)
+        public static int ABS(long a)
         {
-            throw new NotImplementedException();
+            long res = Convert.ToInt32(Math.Abs(a));
+            if (res < int.MinValue || res > int.MaxValue)
+            {
+                throw new OverflowException();
+            }
+            return (int)res;
         }
         /// <summary>
         /// унарний мінус 
         /// </summary>
         /// <param name="a"></param>
         /// <returns></returns>
-        public static int IABS(long а)
+        public static int IABS(long a)
         {
-            throw new NotImplementedException();
+            long res = Convert.ToInt32(Math.Abs(a));
+            if (res < int.MinValue || res > int.MaxValue)
+            {
+                throw new OverflowException();
+            }
+            return -(int)res;
         }
 
     }
