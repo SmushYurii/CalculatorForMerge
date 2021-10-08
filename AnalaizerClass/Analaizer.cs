@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading.Tasks;
+using CalcClass;
+using CalcExeptionClass;
 
 namespace AnalaizerClass
 {
@@ -35,6 +38,10 @@ namespace AnalaizerClass
         ///якій виникла помилка.
         public static bool CheckCurrency()
         {
+            //Error 07 — Дуже довгий вираз. Максмальная довжина — 65536 символів.
+           // if (expression.Length > 65536)
+                //throw new VeryLongExpressException();
+
             Stack st = new Stack();
 
             //перший символ
@@ -159,6 +166,9 @@ namespace AnalaizerClass
                     i--;
                 }
             }
+            //Error 08 — Сумарна кількість чисел і операторів перевищує 30
+            //if (format.LastIndexOf(' ') > 30)
+                //throw new ExccedsNumberOperatorException();
             return format;
         }
 
@@ -247,14 +257,14 @@ namespace AnalaizerClass
         ///<returns>результат обчислень,або повідомлення про помилку</returns>
         public static string RunEstimate()
         {
-            double result = 0; //Результат
-            Stack<double> temp = new Stack<double>(); // стек для розвязання
+            long result = 0; //Результат
+            Stack<long> temp = new Stack<long>(); // стек для розвязання
             ArrayList list = CreateStack();//вхідний стек
             for (int i = 0; i < list.Count; i++)
             {
                 string s = Convert.ToString(list[i]);
-                double number;
-                bool success = double.TryParse(s, out number);
+                long number;
+                bool success = long.TryParse(s, out number);
                 char ch;
                 bool success1 = char.TryParse(s, out ch);
 
@@ -268,22 +278,22 @@ namespace AnalaizerClass
                     if (IsOperator(ch)) //якщо оператор
 
                     {   //Беремo два останнiх значения iз стека
-                        double a = temp.Pop();
-                        double b = temp.Pop();
+                        long a = temp.Pop();
+                        long b = temp.Pop();
 
                         switch (ch)
                         {
                             case '+':
-                                result = b + a;
+                                result =Calc.Add(b , a);
                                 break;
                             case '-':
-                                result = b - a;
+                                result = Calc.Sub(b , a);
                                 break;
                             case '*':
-                                result = b * a;
+                                result = Calc.Mult(b , a);
                                 break;
                             case '/':
-                                result = b / a;
+                                result =Calc.Div(b , a);
                                 break;
                         }
                         temp.Push(result); //Результат вычисления записуємо назад в стек
