@@ -9,3 +9,9 @@ D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcClass\obj\Debug\Cal
 D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcClass\obj\Debug\CalcClass.csproj.CoreCompileInputs.cache
 D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcClass\obj\Debug\CalcClass.dll
 D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcClass\obj\Debug\CalcClass.pdb
+C:\Users\Admin\Desktop\Exam\CalcClass\bin\Debug\CalcClass.dll
+C:\Users\Admin\Desktop\Exam\CalcClass\bin\Debug\CalcClass.pdb
+C:\Users\Admin\Desktop\Exam\CalcClass\obj\Debug\CalcClass.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Exam\CalcClass\obj\Debug\CalcClass.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Exam\CalcClass\obj\Debug\CalcClass.dll
+C:\Users\Admin\Desktop\Exam\CalcClass\obj\Debug\CalcClass.pdb
