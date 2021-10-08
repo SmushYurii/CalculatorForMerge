@@ -1,0 +1,5 @@
+D:\Анна\ITStep Программирование\TeamCalculator\CalcExeptionClass\bin\Debug\CalcExeptionClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\CalcExeptionClass\bin\Debug\CalcExeptionClass.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\CalcExeptionClass\obj\Debug\CalcExeptionClass.csproj.CoreCompileInputs.cache
+D:\Анна\ITStep Программирование\TeamCalculator\CalcExeptionClass\obj\Debug\CalcExeptionClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\CalcExeptionClass\obj\Debug\CalcExeptionClass.pdb

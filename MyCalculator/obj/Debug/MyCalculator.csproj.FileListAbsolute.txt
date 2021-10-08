@@ -1,0 +1,17 @@
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\MyCalculator.exe.config
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\MyCalculator.exe
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\MyCalculator.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\obj\Debug\MyCalculator.csproj.AssemblyReference.cache
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\obj\Debug\MyCalculator.Form1.resources
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\obj\Debug\MyCalculator.Properties.Resources.resources
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\obj\Debug\MyCalculator.csproj.GenerateResource.cache
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\obj\Debug\MyCalculator.csproj.CoreCompileInputs.cache
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\obj\Debug\MyCalculator.exe
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\obj\Debug\MyCalculator.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\AnalaizerClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\CalcClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\CalcExeptionClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\AnalaizerClass.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\CalcClass.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\CalcExeptionClass.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\obj\Debug\MyCalculator.csproj.CopyComplete

@@ -1,0 +1,11 @@
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\bin\Debug\AnalaizerClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\bin\Debug\AnalaizerClass.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.AssemblyReference.cache
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.CoreCompileInputs.cache
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\obj\Debug\AnalaizerClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\obj\Debug\AnalaizerClass.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\bin\Debug\CalcClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\bin\Debug\CalcExeptionClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\bin\Debug\CalcClass.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\bin\Debug\CalcExeptionClass.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.CopyComplete

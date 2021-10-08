@@ -1,0 +1,5 @@
+D:\Анна\ITStep Программирование\TeamCalculator\CalcClass\bin\Debug\CalcClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\CalcClass\bin\Debug\CalcClass.pdb
+D:\Анна\ITStep Программирование\TeamCalculator\CalcClass\obj\Debug\CalcClass.csproj.CoreCompileInputs.cache
+D:\Анна\ITStep Программирование\TeamCalculator\CalcClass\obj\Debug\CalcClass.dll
+D:\Анна\ITStep Программирование\TeamCalculator\CalcClass\obj\Debug\CalcClass.pdb
