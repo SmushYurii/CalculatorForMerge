@@ -16,10 +16,12 @@ namespace MyCalculator
 {
     public partial class Form1 : Form
     {
+        long memoryResult = 0;
         public Form1()
         {
             InitializeComponent();
            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -148,25 +150,6 @@ namespace MyCalculator
                 return;
         }
 
-        private void button19_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text.Length == 0)
-                return;
-        }
-
-        private void button20_Click(object sender, EventArgs e)
-        {
-          
-            if (textBox1.Text.Length == 0)
-                return;
-            else
-            {
-                // textBox1.Text += button20.Text;
-            }
-            Analaizer.expression = textBox1.Text + button20.Text;
-            textBox2.Text = Analaizer.RunEstimate();
-        }
-
         private void button24_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
@@ -194,6 +177,38 @@ namespace MyCalculator
             if (textBox1.Text.Length == 0)
                 return;
             textBox1.Text += button21.Text;
+        }
+
+        private void buttonCalculate_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length == 0)
+                return;
+            else
+            {
+                // textBox1.Text += button20.Text;
+            }
+            Analaizer.expression = textBox1.Text + button20.Text;
+            textBox2.Text = Analaizer.RunEstimate();
+
+        }
+
+        private void buttonMC_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Length == 0)
+                return;
+            memoryResult = 0;
+        }
+
+        private void buttonMPlus_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Length == 0)
+                return;
+            memoryResult += Convert.ToInt64(textBox2.Text);           
+        }
+
+        private void buttonMR_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = memoryResult.ToString();
         }
     }
 }

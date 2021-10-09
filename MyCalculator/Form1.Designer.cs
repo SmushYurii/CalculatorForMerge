@@ -173,7 +173,7 @@ namespace MyCalculator
             this.button20.TabIndex = 44;
             this.button20.Text = "=";
             this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+            this.button20.Click += new System.EventHandler(this.buttonCalculate_Click);
             // 
             // button19
             // 
@@ -184,7 +184,7 @@ namespace MyCalculator
             this.button19.TabIndex = 43;
             this.button19.Text = "MC";
             this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.button19.Click += new System.EventHandler(this.buttonMC_Click);
             // 
             // button18
             // 
@@ -195,7 +195,7 @@ namespace MyCalculator
             this.button18.TabIndex = 42;
             this.button18.Text = "M+";
             this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.button18.Click += new System.EventHandler(this.buttonMPlus_Click);
             // 
             // button17
             // 
@@ -206,7 +206,7 @@ namespace MyCalculator
             this.button17.TabIndex = 41;
             this.button17.Text = "MR";
             this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.button17.Click += new System.EventHandler(this.buttonMR_Click);
             // 
             // button16
             // 
