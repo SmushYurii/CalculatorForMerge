@@ -86,7 +86,7 @@ namespace MyCalculator
             this.button24.TabIndex = 28;
             this.button24.Text = "C";
             this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
+            this.button24.Click += new System.EventHandler(this.buttonC_Click);
             // 
             // button23
             // 
@@ -98,7 +98,7 @@ namespace MyCalculator
             this.button23.TabIndex = 27;
             this.button23.Text = "Backspace";
             this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
+            this.button23.Click += new System.EventHandler(this.buttonBackSpace_Click);
             // 
             // button22
             // 
@@ -110,7 +110,7 @@ namespace MyCalculator
             this.button22.TabIndex = 26;
             this.button22.Text = ")";
             this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.button22.Click += new System.EventHandler(this.buttonCloseBrackets_Click);
             // 
             // button21
             // 
@@ -122,21 +122,24 @@ namespace MyCalculator
             this.button21.TabIndex = 25;
             this.button21.Text = "(";
             this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
+            this.button21.Click += new System.EventHandler(this.buttonOpenBrackets_Click);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.Location = new System.Drawing.Point(108, 63);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(232, 23);
             this.textBox2.TabIndex = 48;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(108, 24);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(232, 23);
             this.textBox1.TabIndex = 47;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -284,7 +287,7 @@ namespace MyCalculator
             this.button10.TabIndex = 34;
             this.button10.Text = "+/-";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.buttonAbs_Click);
             // 
             // button9
             // 
@@ -418,6 +421,7 @@ namespace MyCalculator
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

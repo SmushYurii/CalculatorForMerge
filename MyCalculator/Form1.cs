@@ -21,9 +21,29 @@ namespace MyCalculator
         {
             InitializeComponent();
            
+            KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(this.Form1_KeyDown);
+            this.button20.Click += new EventHandler(this.buttonCalculate_Click);
+            //KeyDown += (s, e) =>
+            //{
+            //    if (e.KeyValue == (char)Keys.Enter)
+            //        buttonCalculate_Click(button20, null);
+            //};
 
         }
 
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+            if (e.KeyCode == Keys.Enter)
+            {
+                button20.PerformClick();              // не рабботает
+            }
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text += button1.Text;
@@ -126,18 +146,6 @@ namespace MyCalculator
             textBox1.Text += "%";
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text.Length == 0)
-                return;
-            else
-            {
-                long result = Convert.ToInt64(Analaizer.RunEstimate());
-                Calc.ABS(result);
-            }
-          
-        }
-
         private void button17_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length == 0)
@@ -150,12 +158,45 @@ namespace MyCalculator
                 return;
         }
 
-        private void button24_Click(object sender, EventArgs e)
+        private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
+            if (textBox1.Text.Length == 0)
+                return;
+            //else
+            //{
+            //    textBox1.Text += button20.Text;
+            //}
+          //  try
+          //  {
+                Analaizer.expression = textBox1.Text;
+                textBox2.Text = Analaizer.Estimate();
+          //  }
+          //  catch (Exception ex) { textBox1.Text = ex.Message; }
+
         }
 
-        private void button23_Click(object sender, EventArgs e)
+        private void buttonMC_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Length == 0)
+                return;
+            memoryResult = 0;
+            textBox2.Text = "";
+        }
+
+        private void buttonMPlus_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Length == 0)
+                return;
+            memoryResult += Convert.ToInt64(textBox2.Text);
+            textBox2.Text = "";
+        }
+
+        private void buttonMR_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = memoryResult.ToString();
+        }
+
+        private void buttonBackSpace_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length == 0)
                 return;
@@ -165,50 +206,33 @@ namespace MyCalculator
             }
         }
 
-        private void button22_Click(object sender, EventArgs e)
+        private void buttonC_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length == 0)
-                return;
-            textBox1.Text += button22.Text;
+            textBox1.Text = "";
         }
 
-        private void button21_Click(object sender, EventArgs e)
+        private void buttonOpenBrackets_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length == 0)
                 return;
             textBox1.Text += button21.Text;
         }
 
-        private void buttonCalculate_Click(object sender, EventArgs e)
+        private void buttonCloseBrackets_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length == 0)
                 return;
-            else
-            {
-                // textBox1.Text += button20.Text;
-            }
-            Analaizer.expression = textBox1.Text + button20.Text;
-            textBox2.Text = Analaizer.RunEstimate();
-
+            textBox1.Text += button22.Text;
         }
 
-        private void buttonMC_Click(object sender, EventArgs e)
+        private void buttonAbs_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text.Length == 0)
+            if (textBox1.Text.Length == 0)
                 return;
-            memoryResult = 0;
+            long res = Convert.ToInt64(textBox2.Text);
+            Calc.ABS(res);
         }
 
-        private void buttonMPlus_Click(object sender, EventArgs e)
-        {
-            if (textBox2.Text.Length == 0)
-                return;
-            memoryResult += Convert.ToInt64(textBox2.Text);           
-        }
-
-        private void buttonMR_Click(object sender, EventArgs e)
-        {
-            textBox2.Text = memoryResult.ToString();
-        }
+      
     }
 }
