@@ -4,9 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading.Tasks;
-using CalcClass;
-using CalcExeptionClass;
 
 namespace AnalaizerClass
 {
@@ -41,6 +38,7 @@ namespace AnalaizerClass
             //Error 07 — Дуже довгий вираз. Максмальная довжина — 65536 символів.
             if (expression.Length > 65536)
                 throw new VeryLongExpressException();
+
 
             Stack st = new Stack();
 
@@ -180,6 +178,7 @@ namespace AnalaizerClass
             //Error 08 — Сумарна кількість чисел і операторів перевищує 30
             if (format.Count(c => c == ' ') > 30)
                 throw new ExccedsNumberOperatorException();
+
             return format;
         }
 
@@ -268,14 +267,14 @@ namespace AnalaizerClass
         ///<returns>результат обчислень,або повідомлення про помилку</returns>
         public static string RunEstimate()
         {
-            long result = 0; //Результат
-            Stack<long> temp = new Stack<long>(); // стек для розвязання
+            double result = 0; //Результат
+            Stack<double> temp = new Stack<double>(); // стек для розвязання
             ArrayList list = CreateStack();//вхідний стек
             for (int i = 0; i < list.Count; i++)
             {
                 string s = Convert.ToString(list[i]);
-                long number;
-                bool success = long.TryParse(s, out number);
+                double number;
+                bool success = double.TryParse(s, out number);
                 char ch;
                 bool success1 = char.TryParse(s, out ch);
 
@@ -289,6 +288,7 @@ namespace AnalaizerClass
                     if (IsOperator(ch)) //якщо оператор
 
                     {   //Беремo два останнiх значения iз стека
+
                         long a = temp.Pop();
                         long b = temp.Pop();
                         try //відловлюю виключення з класу CalcClass
@@ -321,6 +321,24 @@ namespace AnalaizerClass
                         catch (Exception ex)
                         {
                             throw ex;
+
+                        double a = temp.Pop();
+                        double b = temp.Pop();
+
+                        switch (ch)
+                        {
+                            case '+':
+                                result = b + a;
+                                break;
+                            case '-':
+                                result = b - a;
+                                break;
+                            case '*':
+                                result = b * a;
+                                break;
+                            case '/':
+                                result = b / a;
+                                break;
                         }
                     }
                 }
