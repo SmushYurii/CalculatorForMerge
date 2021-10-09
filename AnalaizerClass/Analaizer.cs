@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CalcExeptionClass;
+using CalcClass;
 
 namespace AnalaizerClass
 {
@@ -289,8 +291,8 @@ namespace AnalaizerClass
 
                     {   //Беремo два останнiх значения iз стека
 
-                        long a = temp.Pop();
-                        long b = temp.Pop();
+                        long a = (long)temp.Pop();
+                        long b = (long)temp.Pop();
                         try //відловлюю виключення з класу CalcClass
                         {
                             switch (ch)
@@ -310,7 +312,7 @@ namespace AnalaizerClass
                             }
                             temp.Push(result); //Результат вычисления записуємо назад в стек
                         }
-                        catch(OverflowException ex)
+                        catch (OverflowException ex)
                         {
                             throw ex;
                         }
@@ -321,25 +323,9 @@ namespace AnalaizerClass
                         catch (Exception ex)
                         {
                             throw ex;
-
-                        double a = temp.Pop();
-                        double b = temp.Pop();
-
-                        switch (ch)
-                        {
-                            case '+':
-                                result = b + a;
-                                break;
-                            case '-':
-                                result = b - a;
-                                break;
-                            case '*':
-                                result = b * a;
-                                break;
-                            case '/':
-                                result = b / a;
-                                break;
                         }
+
+                        
                     }
                 }
             }

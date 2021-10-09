@@ -9,3 +9,8 @@ D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\obj\D
 D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\obj\Debug\CalcExeptionClass.csproj.CoreCompileInputs.cache
 D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\obj\Debug\CalcExeptionClass.dll
 D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\CalcExeptionClass\obj\Debug\CalcExeptionClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\CalcExeptionClass\bin\Debug\CalcExeptionClass.dll
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\CalcExeptionClass\bin\Debug\CalcExeptionClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\CalcExeptionClass\obj\Debug\CalcExeptionClass.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\CalcExeptionClass\obj\Debug\CalcExeptionClass.dll
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\CalcExeptionClass\obj\Debug\CalcExeptionClass.pdb

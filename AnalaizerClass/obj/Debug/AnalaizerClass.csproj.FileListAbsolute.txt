@@ -20,3 +20,7 @@ D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\obj\Debu
 D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.CopyComplete
 D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\obj\Debug\AnalaizerClass.dll
 D:\IT_Step_Academy\CommandProject\CalculatorForMerge.git\AnalaizerClass\obj\Debug\AnalaizerClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\obj\Debug\AnalaizerClass.dll
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\obj\Debug\AnalaizerClass.pdb
