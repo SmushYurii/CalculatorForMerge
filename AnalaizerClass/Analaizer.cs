@@ -45,7 +45,7 @@ namespace AnalaizerClass
             Stack st = new Stack();
 
             //перший символ
-            if (expression[0] < '0')
+            if (expression[0] < 0)
                 if (expression[0] != '-' && expression[0] != '(')
                 {
                     erposition = 0;

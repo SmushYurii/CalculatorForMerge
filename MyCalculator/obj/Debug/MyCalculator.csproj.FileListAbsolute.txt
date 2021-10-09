@@ -15,3 +15,20 @@ D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\
 D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\CalcClass.pdb
 D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\bin\Debug\CalcExeptionClass.pdb
 D:\Анна\ITStep Программирование\TeamCalculator\MyCalculator\obj\Debug\MyCalculator.csproj.CopyComplete
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\bin\Debug\MyCalculator.exe.config
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\bin\Debug\MyCalculator.exe
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\bin\Debug\MyCalculator.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\bin\Debug\AnalaizerClass.dll
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\bin\Debug\CalcClass.dll
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\bin\Debug\CalcExeptionClass.dll
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\bin\Debug\AnalaizerClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\bin\Debug\CalcClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\bin\Debug\CalcExeptionClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\obj\Debug\MyCalculator.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\obj\Debug\MyCalculator.Form1.resources
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\obj\Debug\MyCalculator.Properties.Resources.resources
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\obj\Debug\MyCalculator.csproj.GenerateResource.cache
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\obj\Debug\MyCalculator.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\obj\Debug\MyCalculator.csproj.CopyComplete
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\obj\Debug\MyCalculator.exe
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\MyCalculator\obj\Debug\MyCalculator.pdb

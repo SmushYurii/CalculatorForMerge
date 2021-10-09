@@ -24,3 +24,10 @@ C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\obj\Debug\Anala
 C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\obj\Debug\AnalaizerClass.dll
 C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\obj\Debug\AnalaizerClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\bin\Debug\AnalaizerClass.dll
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\bin\Debug\AnalaizerClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\bin\Debug\CalcClass.dll
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\bin\Debug\CalcExeptionClass.dll
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\bin\Debug\CalcClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\bin\Debug\CalcExeptionClass.pdb
+C:\Users\User\Desktop\ForMerge\CalculatorForMerge\AnalaizerClass\obj\Debug\AnalaizerClass.csproj.CopyComplete
