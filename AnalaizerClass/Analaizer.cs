@@ -39,8 +39,8 @@ namespace AnalaizerClass
         public static bool CheckCurrency()
         {
             //Error 07 — Дуже довгий вираз. Максмальная довжина — 65536 символів.
-           // if (expression.Length > 65536)
-                //throw new VeryLongExpressException();
+            if (expression.Length > 65536)
+                throw new VeryLongExpressException();
 
             Stack st = new Stack();
 
@@ -56,6 +56,9 @@ namespace AnalaizerClass
             if (expression[expression.Length - 1] < '0' && expression[expression.Length - 1] != ')')
             {
                 erposition = expression.Length - 1;
+                //Error 05 — Незавершений вираз
+                throw new IncompleteExpresException();
+               
                 return false;
             }
 
@@ -73,6 +76,8 @@ namespace AnalaizerClass
                     if (expression[i + 1] < '0' && expression[i + 1] != '(')//наступне число не може бути знаком якщо це не відкриваюча дужка
                     {
                         erposition = i + 1;
+                        //Error 04 at <i> — Два підряд оператори на <i> символі.
+                        throw new TwoOperatorsException($"Two consecutive operators on the {erposition} character.");
                         return false;
                     }
                 }
@@ -81,6 +86,8 @@ namespace AnalaizerClass
                     if (expression[i + 1] != '-' && expression[i + 1] != '(' && expression[i + 1] <= '0')
                     {
                         erposition = i + 1;
+                        //Error 03 — Невірна синтаксична конструкція вхідного виразу.
+                        throw new IncorrectSyntOftheInputException();
                         return false;
                     }
                     else
@@ -90,12 +97,16 @@ namespace AnalaizerClass
                 if (expression[i] == ')' && expression[i + 1] >= '0')
                 {
                     erposition = i + 1;
+                    // Error 03 — Невірна синтаксична конструкція вхідного виразу.
+                    throw new IncorrectSyntOftheInputException();
                     return false;
                 }
 
                 if (expression[i] == ')' && st.Count == 0 || expression[i] == ')' && Convert.ToChar(st.Peek()) != '(')
                 {
                     erposition = i + 1;
+                    //Error 03 — Невірна синтаксична конструкція вхідного виразу.
+                    throw new IncorrectSyntOftheInputException();
                     return false;
                 }
 
@@ -167,8 +178,8 @@ namespace AnalaizerClass
                 }
             }
             //Error 08 — Сумарна кількість чисел і операторів перевищує 30
-            //if (format.LastIndexOf(' ') > 30)
-                //throw new ExccedsNumberOperatorException();
+            if (format.Count(c => c == ' ') > 30)
+                throw new ExccedsNumberOperatorException();
             return format;
         }
 
@@ -280,23 +291,37 @@ namespace AnalaizerClass
                     {   //Беремo два останнiх значения iз стека
                         long a = temp.Pop();
                         long b = temp.Pop();
-
-                        switch (ch)
+                        try //відловлюю виключення з класу CalcClass
                         {
-                            case '+':
-                                result =Calc.Add(b , a);
-                                break;
-                            case '-':
-                                result = Calc.Sub(b , a);
-                                break;
-                            case '*':
-                                result = Calc.Mult(b , a);
-                                break;
-                            case '/':
-                                result =Calc.Div(b , a);
-                                break;
+                            switch (ch)
+                            {
+                                case '+':
+                                    result = Calc.Add(b, a);
+                                    break;
+                                case '-':
+                                    result = Calc.Sub(b, a);
+                                    break;
+                                case '*':
+                                    result = Calc.Mult(b, a);
+                                    break;
+                                case '/':
+                                    result = Calc.Div(b, a);
+                                    break;
+                            }
+                            temp.Push(result); //Результат вычисления записуємо назад в стек
                         }
-                        temp.Push(result); //Результат вычисления записуємо назад в стек
+                        catch(OverflowException ex)
+                        {
+                            throw ex;
+                        }
+                        catch (DivideByZeroException ex)
+                        {
+                            throw ex;
+                        }
+                        catch (Exception ex)
+                        {
+                            throw ex;
+                        }
                     }
                 }
             }
@@ -313,18 +338,50 @@ namespace AnalaizerClass
         {
             //
             string result = "";
-            bool flag = CheckCurrency();
+           // try
+            //{
+                bool flag = CheckCurrency();
 
-            if (!flag)
-            {
-                ArrayList list = CreateStack();//вхідний стеk
-                result = RunEstimate();
-            }
-            else
-            {
-                throw new Exception("error at " + erposition + " position");
-            }
-
+                if (!flag)
+                {
+                    ArrayList list = CreateStack();//вхідний стеk
+                    result = RunEstimate();
+                }
+                else
+                    throw new Exception($"somethig whrong at position {erposition}");
+        //    }
+        //    catch(VeryLongExpressException ex)
+        //    {
+        //        throw ex;
+        //    }
+        //    catch (ExccedsNumberOperatorException ex)
+        //    {
+        //        throw ex;
+        //    }
+        //    catch (IncompleteExpresException ex)
+        //    {
+        //        throw ex;
+        //    }
+        //    catch (IncorrectSyntOftheInputException ex)
+        //    {
+        //        throw ex;
+        //    }
+        //    catch (TwoOperatorsException ex)
+        //    {
+        //        throw ex;
+        //    }
+        //    catch (OverflowException ex)
+        //    {
+        //        throw ex;
+        //    }
+        //    catch (DivideByZeroException ex)
+        //    {
+        //        throw ex;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw ex;
+        //    }
             return result;
         }
     }
