@@ -57,9 +57,9 @@ namespace AnalaizerClass
             {
                 erposition = expression.Length - 1;
                 //Error 05 — Незавершений вираз
+                return false;
                 throw new IncompleteExpresException();
                
-                return false;
             }
 
             //проходимо в циклі по всіх інших символах
@@ -77,8 +77,9 @@ namespace AnalaizerClass
                     {
                         erposition = i + 1;
                         //Error 04 at <i> — Два підряд оператори на <i> символі.
-                        throw new TwoOperatorsException($"Two consecutive operators on the {erposition} character.");
                         return false;
+                        throw new TwoOperatorsException($"Two consecutive operators on the {erposition} character.");
+                       
                     }
                 }
                 if (expression[i] == '(')//після відкриваючой може бути число або мінус або (
@@ -86,9 +87,9 @@ namespace AnalaizerClass
                     if (expression[i + 1] != '-' && expression[i + 1] != '(' && expression[i + 1] <= '0')
                     {
                         erposition = i + 1;
-                        //Error 03 — Невірна синтаксична конструкція вхідного виразу.
-                        throw new IncorrectSyntOftheInputException();
+                        //Error 03 — Невірна синтаксична конструкція вхідного виразу.                      
                         return false;
+                        throw new IncorrectSyntOftheInputException();
                     }
                     else
                         st.Push(expression[i]);
@@ -98,16 +99,18 @@ namespace AnalaizerClass
                 {
                     erposition = i + 1;
                     // Error 03 — Невірна синтаксична конструкція вхідного виразу.
-                    throw new IncorrectSyntOftheInputException();
                     return false;
+                    throw new IncorrectSyntOftheInputException();
+                   
                 }
 
                 if (expression[i] == ')' && st.Count == 0 || expression[i] == ')' && Convert.ToChar(st.Peek()) != '(')
                 {
                     erposition = i + 1;
                     //Error 03 — Невірна синтаксична конструкція вхідного виразу.
-                    throw new IncorrectSyntOftheInputException();
                     return false;
+                    throw new IncorrectSyntOftheInputException();
+                   
                 }
 
                 if (expression[i] == ')' && Convert.ToChar(st.Peek()) == '(')
