@@ -8,8 +8,6 @@ namespace CalcClass
 {
     public class Calc
     {
-        //private static string _lastError = "";// не використовувати чекати пояснення
-        //public static string lastError { get; set; }// не використовувати чекати пояснення
 
         /// <summary>
         /// Функція складання числа а і b
